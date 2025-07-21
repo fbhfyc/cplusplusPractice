@@ -8,8 +8,9 @@ using namespace yazi::utility;
 int main()
 {
     Logger::instance()->open("./test.log");
-    Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world");
-    cout<<"uiuiui"<<endl;
+    Logger::instance()->set_max(100);
+    Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world","fbh");
+    Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world : %s","fbh");
 
    return 0 ;
 }
