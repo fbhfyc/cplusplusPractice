@@ -9,8 +9,10 @@ int main()
 {
     Logger::instance()->open("./test.log");
     Logger::instance()->set_max(100);
-    Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world","fbh");
-    Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world : %s","fbh");
+    for(int i=0; i<100; ++i) {
+    	Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world","fbh");
+    	Logger::instance()->log(Logger::DEBUG,__FILE__,__LINE__,"hello world : %s","fbh");
+    }
 
    return 0 ;
 }

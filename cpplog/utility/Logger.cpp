@@ -1,8 +1,11 @@
 #include "Logger.h"
 using namespace yazi::utility;
 
+#include <cstring>   // for strerror()
+#include <cerrno>    // for errno
 #include <time.h>
 #include <iostream>
+#include <string>
 #include <stdarg.h>
 
 const char* Logger::s_level[] ={
@@ -97,14 +100,15 @@ void Logger::log(Level level, const char* file,int line, const char* format,...)
 void Logger::rotate()
 {
 	close();
+	m_fout.close();
 	time_t ticks = time(NULL);
 	struct tm* ptm = localtime(&ticks);
 	char timestamp[32] = {0};
-	strftime(timestamp,sizeof(timestamp), ".%Y-%m-%d_%H-%M-%s", ptm);
+	strftime(timestamp,sizeof(timestamp), ".%Y-%m-%d_%H-%M", ptm);
 
 	string filename = m_filename + timestamp;
 	if (rename(m_filename.c_str(), filename.c_str()) != 0) {
-		return;
+		throw std::logic_error("rename log file failed: " +  string(strerror(errno)));
 	}	
 
 

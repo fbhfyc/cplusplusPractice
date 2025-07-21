@@ -1,13 +1,12 @@
-2025-07-20 06:41:43
-2025-07-20 10:03:15hello world
-2025-07-20 10:03:15hello world : fbh
-2025-07-20 10:03:28hello world
-2025-07-20 10:03:28hello world : fbh
-2025-07-20 10:04:49:hello world
-2025-07-20 10:04:49:hello world : fbh
-2025-07-20 10:05:22 : hello world
-2025-07-20 10:05:22 : hello world : fbh
-2025-07-20 12:51:48 : DEBUG 2025-07-20 12:51:48 utility/Logger.cpp:69hello world
-2025-07-20 12:51:48 : DEBUG 2025-07-20 12:51:48 utility/Logger.cpp:69hello world : fbh
-2025-07-20 12:52:27 : DEBUG 2025-07-20 12:52:27 utility/Logger.cpp:69 hello world
-2025-07-20 12:52:27 : DEBUG 2025-07-20 12:52:27 utility/Logger.cpp:69 hello world : fbh
+DEBUG 2025-07-21 06:18:54 ./utility/Logger.cpp:68 hello world
+DEBUG 2025-07-21 06:18:54 ./utility/Logger.cpp:68 hello world : fbh
+DEBUG 2025-07-21 06:24:49 ./utility/Logger.cpp:69 hello world
+DEBUG 2025-07-21 06:24:49 ./utility/Logger.cpp:69 hello world : fbh
+DEBUG 2025-07-21 06:29:29 ./utility/Logger.cpp:69 hello world
+DEBUG 2025-07-21 06:29:29 ./utility/Logger.cpp:69 hello world : fbh
+DEBUG 2025-07-21 06:30:22 ./utility/Logger.cpp:69 hello world
+DEBUG 2025-07-21 06:30:22 ./utility/Logger.cpp:69 hello world : fbh
+DEBUG 2025-07-21 06:31:11 ./utility/Logger.cpp:69 hello world
+DEBUG 2025-07-21 06:31:11 ./utility/Logger.cpp:69 hello world : fbh
+DEBUG 2025-07-21 06:42:29 ./utility/Logger.cpp:71 hello world
+DEBUG 2025-07-21 06:42:29 ./utility/Logger.cpp:71 hello world : fbh
