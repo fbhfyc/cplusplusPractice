@@ -40,10 +40,13 @@ Logger * Logger::m_instance = nullptr;
 
 void Logger::open(const string & filename)
 {
+    m_filename = filename;
     m_fout.open(filename, ios::app);
     if (m_fout.fail()) {
         throw std::logic_error("open err");
     }
+    m_fout.seekp(0, ios::end);
+    m_len = m_fout.tellp();
 }
 
 void Logger::close()
@@ -99,7 +102,6 @@ void Logger::log(Level level, const char* file,int line, const char* format,...)
 
 void Logger::rotate()
 {
-	close();
 	m_fout.close();
 	time_t ticks = time(NULL);
 	struct tm* ptm = localtime(&ticks);
@@ -112,7 +114,7 @@ void Logger::rotate()
 	}	
 
 
-	open(m_filename);
+	m_fout.open(m_filename, ios::app);
 
 }
 

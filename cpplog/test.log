@@ -1,12 +1,2 @@
-DEBUG 2025-07-21 06:18:54 ./utility/Logger.cpp:68 hello world
-DEBUG 2025-07-21 06:18:54 ./utility/Logger.cpp:68 hello world : fbh
-DEBUG 2025-07-21 06:24:49 ./utility/Logger.cpp:69 hello world
-DEBUG 2025-07-21 06:24:49 ./utility/Logger.cpp:69 hello world : fbh
-DEBUG 2025-07-21 06:29:29 ./utility/Logger.cpp:69 hello world
-DEBUG 2025-07-21 06:29:29 ./utility/Logger.cpp:69 hello world : fbh
-DEBUG 2025-07-21 06:30:22 ./utility/Logger.cpp:69 hello world
-DEBUG 2025-07-21 06:30:22 ./utility/Logger.cpp:69 hello world : fbh
-DEBUG 2025-07-21 06:31:11 ./utility/Logger.cpp:69 hello world
-DEBUG 2025-07-21 06:31:11 ./utility/Logger.cpp:69 hello world : fbh
-DEBUG 2025-07-21 06:42:29 ./utility/Logger.cpp:71 hello world
-DEBUG 2025-07-21 06:42:29 ./utility/Logger.cpp:71 hello world : fbh
+DEBUG 2025-07-21 10:28:18 ./utility/Logger.cpp:74 hello world []
+DEBUG 2025-07-22 00:55:55 ./utility/Logger.cpp:74 hello world []
